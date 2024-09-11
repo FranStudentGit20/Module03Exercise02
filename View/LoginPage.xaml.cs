@@ -6,14 +6,14 @@ namespace Module02Exercise01.View
 {
     public partial class LoginPage : ContentPage
     {
-        private readonly IMyService _myService;
+        private readonly IConfigurationService _configurationService;
 
-        public LoginPage(IMyService myService)
+        public LoginPage(IConfigurationService ConfigurationService)
         {
             InitializeComponent();
-            _myService = myService;
+            _configurationService = ConfigurationService;
 
-            var message = _myService.GetMessage();
+            var message = _configurationService.GetMessage();
             MyLabel.Text = message;
         }
 

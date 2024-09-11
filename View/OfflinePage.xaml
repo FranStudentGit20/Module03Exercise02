@@ -5,8 +5,11 @@
              Title="OfflinePage">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        Text="Hello"
+        x:Name="MyLabel"
+        FontSize="32"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+
     </VerticalStackLayout>
 </ContentPage>

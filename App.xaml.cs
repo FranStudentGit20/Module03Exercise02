@@ -39,7 +39,7 @@ namespace Module02Exercise01
             }
             else
             {
-                MainPage = new OfflinePage();
+                MainPage = _serviceProvider.GetRequiredService<OfflinePage>();
             }
         }
 

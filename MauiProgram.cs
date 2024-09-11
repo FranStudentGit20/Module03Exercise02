@@ -18,7 +18,7 @@ namespace Module02Exercise01
                 });
 
 #if DEBUG   //Service
-            builder.Services.AddSingleton<IMyService, MyService>();
+            builder.Services.AddSingleton<IConfigurationService, ConfigurationService>();
             //ContentPage
 
             builder.Services.AddTransient<LoginPage>();
